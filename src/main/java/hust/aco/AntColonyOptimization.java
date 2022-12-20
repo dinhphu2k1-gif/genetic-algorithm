@@ -1,4 +1,4 @@
-package hust.aco.tsp;
+package hust.aco;
 
 import java.util.*;
 import java.util.stream.IntStream;
@@ -10,7 +10,7 @@ public class AntColonyOptimization {
     private final static double BETA = 5; // kiểm soát mức độ ưu tiên khoảng cách
     private final static double p = 0.5; // tốc độ bay hơi
     private final static double Q = 100.0; // hằng số kinh nghiệm, tổng lượng pheromone còn lại trên đường đi
-    private final static int NUM_ANTS = 5; // số lượng con kiến trong tổ
+    private final static int NUM_ANTS = 100; // số lượng con kiến trong tổ
 
     private double randomFactor = 0.01;
 
@@ -41,7 +41,7 @@ public class AntColonyOptimization {
         pheromones = new double[numCities][numCities];
         probabilities = new double[numCities];
 
-        IntStream.range(0, numCities)
+        IntStream.range(0, NUM_ANTS)
                 .forEach(i -> {
                     ants.add(new Ant(numCities));
                 });

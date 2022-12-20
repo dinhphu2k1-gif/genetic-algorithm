@@ -25,6 +25,14 @@ public class Individual {
         fitness = 0;
     }
 
+    public int getDefaultGeneLength() {
+        return defaultGeneLength;
+    }
+
+    public byte[] getGenes() {
+        return genes;
+    }
+
     public int getFitness() {
         if (fitness == 0) {
             fitness = SimpleGeneticAlgorithm.getFitness(this);

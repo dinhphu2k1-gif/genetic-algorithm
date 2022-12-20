@@ -52,6 +52,12 @@
       <artifactId>jenetics</artifactId>
       <version>3.7.0</version>
     </dependency>
+      <dependency>
+          <groupId>org.jetbrains</groupId>
+          <artifactId>annotations</artifactId>
+          <version>13.0</version>
+          <scope>compile</scope>
+      </dependency>
 
 
   </dependencies>

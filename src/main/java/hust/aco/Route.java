@@ -1,8 +1,7 @@
-package hust.aco.tsp;
+package hust.aco;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Route {
     public static ArrayList<City> initRoute = new ArrayList<>(Arrays.asList(

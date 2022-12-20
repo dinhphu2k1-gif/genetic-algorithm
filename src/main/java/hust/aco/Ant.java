@@ -1,4 +1,4 @@
-package hust.aco.tsp;
+package hust.aco;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package hust.aco.tsp;
+package hust.aco;
 
 public class City {
     private String name;

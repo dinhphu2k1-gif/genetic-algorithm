@@ -37,4 +37,8 @@ public class Population {
             individuals.add(i, newIndividual);
         }
     }
+
+    public List<Individual> getIndividuals() {
+        return individuals;
+    }
 }
