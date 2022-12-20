@@ -1,8 +1,11 @@
 package hust.aco;
 
+import lombok.Getter;
+
 import java.util.*;
 import java.util.stream.IntStream;
 
+@Getter
 public class AntColonyOptimization {
     // khởi tạo tham số
     private final static double c = 1.0;
@@ -35,7 +38,7 @@ public class AntColonyOptimization {
     private double bestTourLength = Double.MAX_VALUE;
 
     public AntColonyOptimization() {
-        cities = Route.initRoute;
+        cities = Route.cities;
         numCities = Route.numCities;
         matrix = Route.initMatrix();
         pheromones = new double[numCities][numCities];
@@ -200,5 +203,7 @@ public class AntColonyOptimization {
     public static void main(String[] args) {
         AntColonyOptimization antColonyOptimization = new AntColonyOptimization();
         antColonyOptimization.solve(3);
+
+
     }
 }
