@@ -53,7 +53,6 @@ public class PSO {
     }
 
     public void PSOAlgorithm() {
-        Particle particle = null;
         int iteration = 0;
         boolean done = false;
 

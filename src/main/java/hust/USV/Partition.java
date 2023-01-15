@@ -43,7 +43,7 @@ public class Partition {
     }
 
     public void reset(){
-        targetList.clear();
+        targetList = new ArrayList<>();
     }
 
     public void randomColor() {

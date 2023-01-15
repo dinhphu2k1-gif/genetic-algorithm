@@ -43,7 +43,7 @@ public class Visualization extends JPanel{
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
 
-        for (Partition partition : kmean.partitions) {
+        for (Partition partition : kmean.partitionFinal) {
             for (Target target : partition.targetList) {
                 g.setColor(partition.color);
                 g.fillOval(target.x, target.y, target.w * 10, target.w * 10);

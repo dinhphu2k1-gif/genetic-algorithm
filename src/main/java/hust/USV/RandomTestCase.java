@@ -38,7 +38,7 @@ public class RandomTestCase {
     }
 
     public static void main(String[] args) {
-        RandomTestCase randomTestCase = new RandomTestCase(30);
+        RandomTestCase randomTestCase = new RandomTestCase(50);
         randomTestCase.generateTest();
     }
 }
